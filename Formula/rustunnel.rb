@@ -1,5 +1,5 @@
 class Rustunnel < Formula
-    desc "Your tool description"
+    desc "Open-source tunnel service written in Rust that exposes local services running behind NAT/firewalls to the public internet through a relay server"
     homepage "https://github.com/joaoh82/rustunnel"
     version "0.1.0"
   
