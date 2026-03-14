@@ -1,30 +1,30 @@
 class Rustunnel < Formula
   desc "Self-hosted secure tunnel client — expose local services through a public server"
   homepage "https://github.com/joaoh82/rustunnel"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/joaoh82/rustunnel/releases/download/v0.2.2/rustunnel-v0.2.2-aarch64-apple-darwin.tar.gz"
-      sha256 "17404cbdb75352ee7cc27ceb18d241fb9efc87babe6a71fcbbcc512e78f54610"
+      url "https://github.com/joaoh82/rustunnel/releases/download/v0.2.3/rustunnel-v0.2.3-aarch64-apple-darwin.tar.gz"
+      sha256 "8ce7eaaed9b4e4bd8d9097e7b29253339e03fc2cc1bb728ea7085678e819e568"
     end
 
     on_intel do
-      url "https://github.com/joaoh82/rustunnel/releases/download/v0.2.2/rustunnel-v0.2.2-x86_64-apple-darwin.tar.gz"
-      sha256 "a27f9be14ba3cdece4aa546c20805eb9b21de5a6a2f72791ce3dd62998d291f4"
+      url "https://github.com/joaoh82/rustunnel/releases/download/v0.2.3/rustunnel-v0.2.3-x86_64-apple-darwin.tar.gz"
+      sha256 "9f7335c447fde1eb178e19af1c63c2ff3025b0bc3aac3687fd6db96716a2ff74"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/joaoh82/rustunnel/releases/download/v0.2.2/rustunnel-v0.2.2-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "4c832902559d0960f64e10858eefaef16974db04a903d72d34edf01aefb0fc66"
+      url "https://github.com/joaoh82/rustunnel/releases/download/v0.2.3/rustunnel-v0.2.3-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "cd5a446fcafa863986a6e8164ab3f58d5e24d2b82eca552d329d45952b38b8e6"
     end
 
     on_intel do
-      url "https://github.com/joaoh82/rustunnel/releases/download/v0.2.2/rustunnel-v0.2.2-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "c8a7c8cfec95b8a8665d98afb2a79d2a49ca3bf1ff5d7116e530fb4833259b00"
+      url "https://github.com/joaoh82/rustunnel/releases/download/v0.2.3/rustunnel-v0.2.3-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "ff67b413d6c26b07aaf397eae83a9238876e691c15caf548eb56fb00b56ff164"
     end
   end
 
