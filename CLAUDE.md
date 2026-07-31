@@ -13,18 +13,18 @@ This repo is **almost entirely write-by-CI**. Humans rarely commit here; the for
 
 ## Parent project
 
-**Parent project:** [rustunnel](/Users/joaoh82/projects/rustunnel/CLAUDE.md) — read for shared dev commands, env vars, and cross-service architecture.
+**Parent project:** [rustunnel](/Users/joaoh82/projects/rustunnel/CLAUDE.md) — read for shared dev commands, env vars, cross-service architecture, **and the global working guidelines** (never-touch-main, task management, pull-request registration, reserved ports, engineering defaults). Those guideline sections live only in the parent `CLAUDE.md` — this file does not duplicate them.
 
 ### How I fit in
 
 | Sibling | Stack | Role |
 |---|---|---|
 | `rustunnel/` | Rust (Tokio/Axum/yamux) | Core tunnel server + CLI client + MCP server. **Source of truth** for the binary this formula installs. |
-| `rustunnel-web/` | Rust (Axum) + Next.js 15 | Platform API + public website. |
+| `rustunnel-web/` | Rust (Axum) + Next.js 15 | Platform API + public website and marketing pages. |
 | `rustunnel-admin-dashboard/` | Next.js 14 | Admin dashboard. |
-| `rustunnel-landing/` | Next.js 15 | Marketing landing page. |
 | `rustunnel-private/` | Markdown / Bash / Ansible | Ops docs and edge provisioning. |
 | `docs/` | Mintlify (MDX) | Public documentation site. |
+| `rustunnel-status/` | Upptime (YAML + Actions) | `status.rustunnel.com`. |
 | `homebrew-rustunnelcli/` | Ruby | **This repo.** Homebrew tap for the CLI. |
 
 The CLI binary is built by `rustunnel/`'s release workflow, which then renders the formula template here from the release artifacts' SHA256 checksums and pushes the result. There is no direct runtime dependency from this repo on the others.
